@@ -1,0 +1,48 @@
+{
+  "name": "equalize.css",
+  "version": "1.0.0",
+  "description": "A CSS foundation with respect for accessibility (a11y)",
+  "main": "dist/equalize.min.css",
+  "style": "dist/equalize.min.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandersandberg/equalize.css.git"
+  },
+  "keywords": [
+    "css",
+    "css-reset",
+    "normalization",
+    "accessibility",
+    "a11y",
+    "inclusive-design"
+  ],
+  "author": "Alexander Sandberg <hi@alexandersandberg.com> (https://alexandersandberg.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexandersandberg/equalize.css/issues"
+  },
+  "homepage": "https://github.com/alexandersandberg/equalize.css#readme",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "onchange": "^6.0.0",
+    "postcss-cli": "^6.1.2",
+    "postcss-preset-env": "^6.6.0",
+    "rimraf": "^2.6.3"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "postcss": "postcss -o dist/equalize.css src/equalize.css",
+    "minify": "postcss -u cssnano -o dist/equalize.min.css dist/equalize.css --no-map",
+    "build": "npm run postcss && npm run minify && echo \"📦 Finished building\"",
+    "dev": "npm run build -s && onchange \"src/*.css\" -- npm run build -s \">\" {{changed}} \"(\"{{event}}\")\""
+  },
+  "browserslist": [
+    "last 2 chrome versions",
+    "last 2 edge versions",
+    "last 2 firefox versions",
+    "last 2 opera versions",
+    "last 2 safari versions",
+    "last 2 ios versions",
+    "ie 11"
+  ]
+}

@@ -30,14 +30,18 @@
 }
 
 /*
-  1. Make line height consistent (all)
-  2. Prevent font size adjustment after orientation changes (IE, iOS)
-  3. Prevent overflow from long words (all)
+  1. Use default UI font (all)
+  2. Make line height consistent (all)
+  3. Prevent font size adjustment after orientation changes (IE, iOS)
+  4. Prevent overflow from long words (all)
 */
 html {
-  line-height: 1.5; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-  word-break: break-word; /* 3 */
+  background: white;
+  font-family: system-ui; /* 1 */
+  font-size: 1em;
+  line-height: 1.5; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 3 */
+  word-break: break-word; /* 4 */
 }
 
 /*
@@ -105,14 +109,26 @@ nav ul {
 }
 
 /*
-  1. Correct inheritance and scaling of font size (all)
+  1. Use default monospace UI font (all)
   2. Correct off em sizing (all)
 */
 pre,
 code,
 kbd,
 samp {
-  font-family: monospace, monospace; /* 1 */ /* Possible change */
+  font-family:
+    /* macOS 10.10+ */ "Menlo",
+    /* Windows 6+ */ "Consolas",
+    /* Android 4+ */ "Roboto Mono",
+    /* Ubuntu 10.10+ */ "Ubuntu Monospace",
+    /* KDE Plasma 5+ */ "Noto Mono",
+    /* KDE Plasma 4+ */ "Oxygen Mono",
+    /* Linux/OpenOffice fallback */ "Liberation Mono",
+    /* fallback */ monospace,
+    /* macOS emoji */ "Apple Color Emoji",
+    /* Windows emoji */ "Segoe UI Emoji",
+    /* Windows emoji */ "Segoe UI Symbol",
+    /* Linux emoji */ "Noto Color Emoji"; /* 1 */
   font-size: 1em; /* 2 */ /* Possible change */
 }
 
@@ -239,12 +255,12 @@ textarea {
 }
 
 /*
-  1. Correct odd appearance (Chrome, Edge, Safari)
-  2. Correct outline style (Safari)
+  1. Correct outline style (Safari)
+  2. Correct odd appearance (Chrome, Edge, Safari)
 */
 [type="search"] {
-  -webkit-appearance: textfield;
-  outline-offset: -2px;
+  outline-offset: -2px; /* 1 */
+  -webkit-appearance: textfield; /* 2 */
 }
 
 /*
@@ -271,12 +287,12 @@ textarea {
 }
 
 /*
-  1. Correct inability to style upload buttons (iOS, Safari)
-  2. Inherit font properties (Safari)
+  1. Inherit font properties (Safari)
+  2. Correct inability to style upload buttons (iOS, Safari)
 */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  font: inherit;
+  font: inherit; /* 1 */
+  -webkit-appearance: button; /* 2 */
 }
 
 /*

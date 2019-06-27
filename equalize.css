@@ -117,11 +117,13 @@ samp {
 }
 
 /*
-  Add correct text decoration (Edge 18-, IE, Safari)
+  1. Add correct text decoration (Edge 18-, IE, Safari)
+  2. Change cursor for <abbr> elements (all)
 */
 abbr[title] {
-  text-decoration: underline;
-  text-decoration: underline dotted;
+  text-decoration: underline; /* 1 */
+  text-decoration: underline dotted; /* 1 */
+  cursor: help; /* 2 */
 }
 
 /*

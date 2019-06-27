@@ -96,7 +96,7 @@ hr {
 /*
   Correct sizing (Firefox)
 */
-hr:not([size]) {
+hr {
   height: 0;
 }
 

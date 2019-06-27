@@ -36,7 +36,6 @@
   4. Prevent overflow from long words (all)
 */
 html {
-  background: white;
   font-family: system-ui; /* 1 */
   font-size: 1em;
   line-height: 1.5; /* 2 */

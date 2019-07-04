@@ -66,18 +66,6 @@ textarea { /* (Firefox, Safari) */
 }
 
 /*
-  Restrict with to container (all)
-*/
-iframe,
-img,
-input,
-select,
-textarea {
-  height: auto;
-  max-width: 100%;
-}
-
-/*
   Correct <h1> elements within <section> and <article> contexts
   (Chrome, Edge, Firefox, Safari)
 */
@@ -239,14 +227,14 @@ fieldset {
 }
 
 /*
-  1. Correct text wrapping (Edge 18-, IE)
-  2. Correct color inheritance from <fieldset> (IE)
+  1. Correct color inheritance from <fieldset> (IE)
+  2. Correct text wrapping (Edge 18-, IE)
 */
 legend {
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  white-space: normal; /* 1 */
+  color: inherit; /* 1 */
+  display: table; /* 2 */
+  max-width: 100%; /* 2 */
+  white-space: normal; /* 2 */
 }
 
 /*

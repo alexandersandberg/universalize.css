@@ -31,18 +31,19 @@
 
 /*
   1. Use default UI font (all)
-  2. Make line height consistent (all)
-  3. Whitespace between content and viewport edge (all)
-  4. Prevent font size adjustment after orientation changes (IE, iOS)
-  5. Prevent overflow from long words (all)
+  2. Make font size more accessible to everyone (all)
+  3. Make line height consistent (all)
+  4. Whitespace between content and viewport edge (all)
+  5. Prevent font size adjustment after orientation changes (IE, iOS)
+  6. Prevent overflow from long words (all)
 */
 html {
   font-family: system-ui; /* 1 */
-  font-size: 1em;
-  line-height: 1.5; /* 2 */
-  padding: 1em; /* 3 */
-  -webkit-text-size-adjust: 100%; /* 4 */
-  word-break: break-word; /* 5 */
+  font-size: 112.5%; /* 2 */
+  line-height: 1.7; /* 3 */
+  padding: 1em; /* 4 */
+  -webkit-text-size-adjust: 100%; /* 5 */
+  word-break: break-word; /* 6 */
 }
 
 /*

@@ -1,5 +1,4 @@
 # equalize.css
-
 equalize.css is a CSS foundation with respect for accessiblity (a11y), based on [sanitize.css](https://github.com/csstools/sanitize.css).
 
 ## Browser support
@@ -13,16 +12,8 @@ equalize.css is a CSS foundation with respect for accessiblity (a11y), based on 
 
 (Last 2 versions)
 
-## A project by Alexander Sandberg
-
-Thanks for checking out my project! ❤️
-
-If you want to get in touch, or check out my other work, you can find me here:
-
-- [Website](https://alexandersandberg.com) (alexandersandberg.com)
-- [GitHub](https://github.com/alexandersandberg) (@alexandersandberg)
-- [Twitter](https://twitter.com/alexandberg) (@alexandberg)
+## Contributing
+If you found a bug that needs fixing, or have a feature you want to discuss or implement, feel free to open an issue or a pull request. Any contribution is appreciated, big or small!
 
 ## License
-
 Distributed under the MIT License © [Alexander Sandberg](https://github.com/alexandersandberg)

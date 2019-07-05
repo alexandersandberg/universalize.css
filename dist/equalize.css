@@ -67,25 +67,11 @@ textarea { /* (Firefox, Safari) */
 }
 
 /*
-  Correct <h1> elements within <section> and <article> contexts
-  (Chrome, Edge, Firefox, Safari)
-*/
-h1 {
-  font-size: 2em; /* Possibly change */
-  margin: 0.67em 0; /* Possibly change */
-}
-
-/*
-  Show overflow (IE18-, IE)
+  1. Show overflow (IE18-, IE)
+  2. Correct sizing (Firefox)
 */
 hr {
   overflow: visible;
-}
-
-/*
-  Correct sizing (Firefox)
-*/
-hr {
   height: 0;
 }
 
@@ -112,7 +98,7 @@ nav ul {
 
 /*
   1. Use default monospace UI font (all)
-  2. Correct off em sizing (all)
+  2. Correct font sizing (all)
 */
 pre,
 code,
@@ -131,7 +117,7 @@ samp {
     /* Windows emoji */ "Segoe UI Emoji",
     /* Windows emoji */ "Segoe UI Symbol",
     /* Linux emoji */ "Noto Color Emoji"; /* 1 */
-  font-size: 1em; /* 2 */ /* Possible change */
+  font-size: 1em; /* 2 */
 }
 
 /*
@@ -157,7 +143,7 @@ strong {
   Add correct font size (all)
 */
 small {
-  font-size: 80%; /* Possibly change */
+  font-size: 80%;
 }
 
 /*
@@ -198,7 +184,7 @@ svg:not(:root) {
 */
 button,
 input {
-  overflow: visible; /* Show overflow in Edge */
+  overflow: visible;
 }
 
 /*
@@ -224,8 +210,8 @@ button,
   2. Correct padding (Firefox)
 */
 fieldset {
-  border: 1px solid #a0a0a0; /* 1 */ /* Possible change */
-  padding: 0.35em 0.75em 0.625em; /* 2 */ /* Possible change */
+  border: 1px solid #666; /* 1 */
+  padding: 0.35em 0.75em 0.625em; /* 2 */
 }
 
 /*
@@ -279,7 +265,7 @@ textarea {
 */
 ::-webkit-input-placeholder {
   color: inherit;
-  opacity: 0.54; /* Possible change */
+  opacity: 0.54;
 }
 
 /*
@@ -353,4 +339,13 @@ textarea {
 [aria-hidden="false"][hidden]:not(:focus) {
   clip: rect(0, 0, 0, 0);
   position: absolute;
+}
+
+/*
+  Print out URLs after links (all)
+*/
+@media print {
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+  }
 }

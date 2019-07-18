@@ -39,7 +39,7 @@
 */
 html {
   font-family: system-ui; /* 1 */
-  font-size: 112.5%; /* 2 */
+  font-size: 125%; /* 2 */
   line-height: 1.6; /* 3 */
   padding: 1em; /* 4 */
   -webkit-text-size-adjust: 100%; /* 5 */

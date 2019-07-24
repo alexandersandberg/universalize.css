@@ -1,12 +1,12 @@
 {
-  "name": "equalize.css",
-  "version": "1.0.0",
+  "name": "universalize.css",
+  "version": "1.0.2",
   "description": "A CSS foundation with respect for accessibility (a11y)",
-  "main": "dist/equalize.min.css",
-  "style": "dist/equalize.min.css",
+  "main": "dist/universalize.min.css",
+  "style": "dist/universalize.min.css",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexandersandberg/equalize.css.git"
+    "url": "git+https://github.com/alexandersandberg/universalize.css.git"
   },
   "keywords": [
     "css",
@@ -19,9 +19,9 @@
   "author": "Alexander Sandberg <hi@alexandersandberg.com> (https://alexandersandberg.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alexandersandberg/equalize.css/issues"
+    "url": "https://github.com/alexandersandberg/universalize.css/issues"
   },
-  "homepage": "https://github.com/alexandersandberg/equalize.css#readme",
+  "homepage": "https://github.com/alexandersandberg/universalize.css#readme",
   "devDependencies": {
     "cssnano": "^4.1.10",
     "onchange": "^6.0.0",
@@ -31,8 +31,8 @@
   },
   "scripts": {
     "clean": "rimraf dist",
-    "postcss": "postcss -o dist/equalize.css src/equalize.css",
-    "minify": "postcss -u cssnano -o dist/equalize.min.css dist/equalize.css --no-map",
+    "postcss": "postcss -o dist/universalize.css src/universalize.css",
+    "minify": "postcss -u cssnano -o dist/universalize.min.css dist/universalize.css --no-map",
     "build": "npm run postcss && npm run minify && echo \"📦 Finished building\"",
     "dev": "npm run build -s && onchange \"src/*.css\" -- npm run build -s \">\" {{changed}} \"(\"{{event}}\")\""
   },

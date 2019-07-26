@@ -1,6 +1,8 @@
 # universalize.css
 universalize.css is a CSS foundation with respect for accessiblity (a11y), based on [sanitize.css](https://github.com/csstools/sanitize.css).
 
+**This is still in the early stages!**
+
 ## Browser support
 * Chrome
 * Edge

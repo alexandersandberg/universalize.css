@@ -1,6 +1,6 @@
 {
   "name": "universalize.css",
-  "version": "1.0.2",
+  "version": "0.0.1",
   "description": "A CSS foundation with respect for accessibility (a11y)",
   "main": "dist/universalize.min.css",
   "style": "dist/universalize.min.css",
